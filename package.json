@@ -1,0 +1,63 @@
+{
+  "name": "@slate71/agent-status",
+  "version": "0.0.1",
+  "description": "React component for rendering AI agent state in a dashboard",
+  "author": "slate71",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slate71/agent-status.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slate71/agent-status/issues"
+  },
+  "homepage": "https://slate71.github.io/agent-status/",
+  "keywords": [
+    "react",
+    "ai",
+    "agent",
+    "status",
+    "dashboard",
+    "component",
+    "typescript"
+  ],
+  "type": "module",
+  "main": "./dist/agent-status.cjs",
+  "module": "./dist/agent-status.js",
+  "types": "./dist/agent-status.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/agent-status.js",
+      "require": "./dist/agent-status.cjs",
+      "types": "./dist/agent-status.d.ts"
+    },
+    "./styles.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:demo": "vite build --config vite.demo.config.ts",
+    "preview": "vite preview",
+    "predeploy": "npm run build:demo",
+    "deploy": "gh-pages -d demo-dist",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "gh-pages": "^6.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.7.0"
+  }
+}

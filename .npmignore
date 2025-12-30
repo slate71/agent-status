@@ -1,0 +1,16 @@
+# Source files
+src/
+demo-dist/
+
+# Configuration files
+.gitignore
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+vite.demo.config.ts
+index.html
+
+# Development files
+*.log
+.DS_Store
+node_modules/
