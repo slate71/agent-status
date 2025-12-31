@@ -18,7 +18,7 @@ This file provides guidance for Claude when working on this repository.
 
 - `src/AgentStatus.tsx` - Main component
 - `src/AgentStatus.css` - Component styles with CSS custom properties
-- `src/App.tsx` - Demo application
+- `src/demo/App.tsx` - Demo application
 - `vite.config.ts` - Library build configuration
 - `vite.demo.config.ts` - Demo build configuration
 
